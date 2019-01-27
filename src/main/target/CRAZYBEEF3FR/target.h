@@ -61,7 +61,8 @@
 
 #define ENABLE_DSHOT_DMAR       true
 
-#define LED0_PIN                PB3
+#define LED0_PIN                PA10
+#define LED0_INVERTED
 #define USE_BEEPER 
 #define BEEPER_PIN              PC15
 #define BEEPER_INVERTED
@@ -119,7 +120,7 @@
 #define RX_NSS_PIN              SPI2_NSS_PIN
 #define RX_IRQ_PIN              PA8
 #define BINDPLUG_PIN            PA9
-#define RX_SPI_LED_PIN          PA10
+#define RX_SPI_LED_PIN          PB3
 #define DEFAULT_FEATURES        (FEATURE_TELEMETRY | FEATURE_OSD | FEATURE_MOTOR_STOP)
 #elif defined(CRAZYBEEF3DX)
 #define DEFAULT_RX_FEATURE      FEATURE_RX_SERIAL
@@ -138,7 +139,7 @@
 #define RX_SPI_INSTANCE         SPI2
 #define RX_NSS_PIN              SPI2_NSS_PIN
 #define RX_CC2500_SPI_GDO_0_PIN  PA8
-#define RX_SPI_LED_PIN          PA10
+#define RX_SPI_LED_PIN          PB3
 #define BINDPLUG_PIN            PA9
 #define DEFAULT_FEATURES        (FEATURE_TELEMETRY | FEATURE_OSD | FEATURE_MOTOR_STOP)
 #endif
